@@ -3,13 +3,10 @@ require_relative './my_enumerable'
 class MyList
   include MyEnumerable
 
-  # instance variable @list
   def initialize(*list)
     @list = list
   end
 
-  # implement a method each that yields successive members of @list
-  # implicit send of &block
   def each
     @list.each
   end

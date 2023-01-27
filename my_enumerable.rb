@@ -3,6 +3,7 @@ module MyEnumerable
     @list.each do |e|
       return false unless yield e
     end
+    true
   end
 
   def any?
